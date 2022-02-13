@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Monster killer Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="vendor.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section class="health">
+      <h3>MONSTER HEALTH</h3>
+      <progress id="monster-health" value="80" max="100"></progress>
+      <h3>PLAYER HEALTH <span id="bonus-life">1</span></h3>
+      <progress id="player-health" value="80" max="100"></progress>
+    </section>
+    <section class="buttons">
+      <button id="attack-btn">ATTACK</button>
+      <button id="strong-attack-btn">STRONG ATTACK</button>
+      <button id="heal-btn">HEAL</button>
+      <button id="log-btn">SHOW LOG</button>
+    </section>
+  </body>
+</html>

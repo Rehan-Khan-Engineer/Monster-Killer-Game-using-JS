@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+}
+
+.health {
+  background-color: white;
+
+  width: 30rem;
+  margin: 2rem auto;
+  padding: 1rem;
+
+  text-align: center;
+
+  border-radius: 0.8rem;
+}
+
+.health h3 {
+  margin: 0.5rem;
+
+  font-size: 1.25rem;
+}
+
+.health span {
+  background-color: #ff0062;
+  color: white;
+
+  border-radius: 40%;
+  border: 1px solid #ff0062;
+
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.5rem;
+}
+
+progress {
+  /* To reset the default styles, we simply set -webkit-appearance to none.  */
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 80%;
+  height: 1.5rem;
+
+  border: 1px solid #a927f5;
+}
+
+/* WebKit/Blink provides two pseudo classes to style the progress element: */
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #a927f5;
+
+  transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #a927f5;
+
+  transition: all 0.2s ease-out;
+}
+
+.buttons {
+  background-color: white;
+
+  width: 30rem;
+  margin: 1rem auto;
+  padding: 1rem;
+
+  border-radius: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  margin: 0.5rem 0;
+  padding: 1rem;
+
+  color: white;
+  background-color: #ff0062;
+
+  border-radius: 0.8rem;
+  border: none;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+button:hover,
+button:active {
+  background: #a927f5;
+  border-color: #a927f5;
+}
