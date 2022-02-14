@@ -20,7 +20,7 @@ const enteredValue = prompt(
 );
 
 let chosenMaxLife = parseInt(enteredValue);
-let battleLog = [];
+const battleLog = [];
 let lastLoggedEntry;
 
 if (isNaN(chosenMaxLife) || chosenMaxLife <= 0) {
